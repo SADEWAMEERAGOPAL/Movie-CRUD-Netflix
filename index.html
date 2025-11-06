@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>netflix</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+     <!---nav-->   
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <header class="mt-5">
+                        <div class="row">
+                            <div class="col-6"><a href="index.html" class="logo"><img src="assets/images/logo.svg" alt="logo" title="logo"></a></div>
+                            <div class="col-6 text-right d-flex justify-content-end align-items-center"><button class="btn btn-sm nfx-pri-btn" id="showModelbtn">ADD MOVIE</button></div>
+                        </div>
+                    </header>
+        
+                </div>
+            </div>
+        </div>
+
+        <!--moviecards-->
+         <div class="container-fluid">
+            <div class="row" id="moviecards">
+               <!----<div class="col-md-3 col-sm-6">
+                    <div class="card movieCard text-white">
+                        <div class="card-heading">
+                            <div class="row d-flex justify-content-between align-items-center"> s
+                                <div class="col-10"> <h2 class="m-0 ">movie name: the jocker</h2></div>
+                               <div class="col-2">
+                               <h3 class="m-0"><span class="badge badge-success">5</span></h3>
+                            </div>
+                        </div>
+                            
+                        </div>
+                        <div class="card-body py-0">
+                          <figure>
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.--aM2ReJGNKDxBNvo8_k0QHaE8?pid=Api&P=0&h=180" alt="" title="">
+                            <figcaption>
+                                <h5>movie name: the jocker</h5>
+                                <p> the origins of the passage and its history, from the Roman 
+                                </p>
+                           
+
+                            </figcaption>
+                          </figure>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                             <button class="btn btn-sm nfx-sec-btn" id="">edit</button> 
+                             <button  type="button" class=" btn btn-sm nfx-pri-btn  ">remove</button>
+                        </div>
+                    </div>
+                </div>-->
+               
+            </div>
+         </div>
+
+         <!--backdrop-->
+         <div class="backdrop closeModel" id="backdrop"></div>
+
+
+       <!--MOVIE-MODEL-->  
+         <div class="Moviemodel" id="moviemodel">
+            <form id="movieForm">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4>Add Movie Detail</h4>
+                       <div><i class="fa-solid fa-xmark fa-2x closeModel"></i></div> 
+                    </div>
+                      <div class="card-body">
+                         <div class="form-group">
+                            <label for="MovieName">Movie Name</label>
+                            <input type="text" class="form-control" id="MovieName" required>
+                         </div>
+                         <div class="form-group">
+                            <label for="url">Movie Img Url</label>
+                            <input type="text" class="form-control" id="MovieImgUrl">
+                         </div>
+                         <div class="form-group">
+                            <label for="MovieDescripation">Movie  Descripation</label>
+                            <textarea type="text" class="form-control" id="MovieDescripation"></textarea>
+                         </div>
+                         <div class="form-group">
+                            <label for="Movierating">Movie Rating</label>
+                            <select class="form-control" id="Movierating" required>
+                                <option value=" "disabled selected>select rating</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                         </div>
+                    </div>
+                  
+                    <div class="card-footer d-flex justify-content-between">
+                       <button  type="submit" class="btn btn-sm nfx-pri-btn" id="MovieAddBtn">ADD MOVIE</button>
+                       <button  type="button" class="btn btn-sm nfx-pri-btn d-none" id="MovieUpdateBtn">UPDATE MOVIE</button> 
+                       <button  type="button" class=" btn btn-sm nfx-sec-btn  closeModel">CLOSE</button> 
+                    </div>
+                
+                </div>
+            </form>
+         </div>
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

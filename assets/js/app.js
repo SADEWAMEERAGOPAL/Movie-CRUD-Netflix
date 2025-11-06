@@ -15,7 +15,15 @@ const movieupdateBtn=document.getElementById('MovieUpdateBtn');
 
 
 
-let movieArr=[];
+let movieArr=[{MovieName: 'Avengers:Endgame', MovieImgUrl: 'https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg', rating: '2', descripation: 'After devastating events, the Avengers assemble once more to undo Thanos’ actions.', MovieId: '936a6ff7-47d3-4db5-b4e4-d9b6dcd70bf1'},
+{MovieName: 'Pulp Fiction', MovieImgUrl: 'https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg', rating: '3', descripation: 'The lives of two mob hitmen, a boxer, and others intertwine in a series of violent stories.', MovieId: '46d4b783-471f-4b6d-90ad-864ef306c4c9'},
+{MovieName: 'The Shawshank Redemption', MovieImgUrl: 'https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg', rating: '4', descripation: 'Two imprisoned men bond over years, finding solace…ng solace and redemption through acts of decency.', MovieId: '844ab12a-f425-4b69-bacf-1aef4f8e6ec4'},
+{MovieName: 'Interstellar', MovieImgUrl: 'https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg', rating: '5', descripation: 'A team of explorers travels through a wormhole in space to ensure humanity’s survival.', MovieId: '2a543a46-0685-44d2-b870-f1dde25f90fa'},
+{MovieName: 'The Dark Knight', MovieImgUrl: 'https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg', rating: '5', descripation: 'Batman faces the Joker, a criminal mastermind who plunges Gotham into chaos.', MovieId: 'd4a5ed7f-80b8-42a3-b125-055650f28702'},
+{MovieName: 'inception', MovieImgUrl: 'https://up.yimg.com/ib/th/id/OIP.SDLkOsgAz_CfDHY-4YhjaQHaEK?pid=Api&rs=1&c=1&qlt=95&w=167&h=93', rating: '4', descripation: '"A thief who enters the dreams of others must plant an idea into a target’s subconscious.', MovieId: '0de28ef1-0e97-42a7-af5f-187d6172930e'}
+];
+
+
 if(localStorage.getItem("movieArr")){
   movieArr=JSON.parse(localStorage.getItem("movieArr"))
 }
